@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EntityPersonelDataSet" targetNamespace="http://tempuri.org/EntityPersonelDataSet.xsd" xmlns:mstns="http://tempuri.org/EntityPersonelDataSet.xsd" xmlns="http://tempuri.org/EntityPersonelDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EntityPersonelConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EntityPersonelConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EntityPersonel1.Properties.Settings.GlobalReference.Default.EntityPersonelConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="viewPersonelBirimTableAdapter" GeneratorDataComponentClassName="viewPersonelBirimTableAdapter" Name="viewPersonelBirim" UserDataComponentName="viewPersonelBirimTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EntityPersonelConnectionString (Settings)" DbObjectName="EntityPersonel.dbo.viewPersonelBirim" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PersonelID, BirimID, AdiSoyadi, Telefon, Adres, Email, Tarih, IsActive, BirimAdi FROM dbo.viewPersonelBirim</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PersonelID" DataSetColumn="PersonelID" />
+              <Mapping SourceColumn="BirimID" DataSetColumn="BirimID" />
+              <Mapping SourceColumn="AdiSoyadi" DataSetColumn="AdiSoyadi" />
+              <Mapping SourceColumn="Telefon" DataSetColumn="Telefon" />
+              <Mapping SourceColumn="Adres" DataSetColumn="Adres" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="Tarih" DataSetColumn="Tarih" />
+              <Mapping SourceColumn="IsActive" DataSetColumn="IsActive" />
+              <Mapping SourceColumn="BirimAdi" DataSetColumn="BirimAdi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EntityPersonelDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="EntityPersonelDataSet" msprop:Generator_DataSetName="EntityPersonelDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewPersonelBirim" msprop:Generator_RowEvHandlerName="viewPersonelBirimRowChangeEventHandler" msprop:Generator_RowDeletedName="viewPersonelBirimRowDeleted" msprop:Generator_RowDeletingName="viewPersonelBirimRowDeleting" msprop:Generator_RowEvArgName="viewPersonelBirimRowChangeEvent" msprop:Generator_TablePropName="viewPersonelBirim" msprop:Generator_RowChangedName="viewPersonelBirimRowChanged" msprop:Generator_RowChangingName="viewPersonelBirimRowChanging" msprop:Generator_TableClassName="viewPersonelBirimDataTable" msprop:Generator_RowClassName="viewPersonelBirimRow" msprop:Generator_TableVarName="tableviewPersonelBirim" msprop:Generator_UserTableName="viewPersonelBirim">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonelID" msprop:Generator_ColumnPropNameInRow="PersonelID" msprop:Generator_ColumnPropNameInTable="PersonelIDColumn" msprop:Generator_ColumnVarNameInTable="columnPersonelID" msprop:Generator_UserColumnName="PersonelID" type="xs:int" />
+              <xs:element name="BirimID" msprop:Generator_ColumnPropNameInRow="BirimID" msprop:Generator_ColumnPropNameInTable="BirimIDColumn" msprop:Generator_ColumnVarNameInTable="columnBirimID" msprop:Generator_UserColumnName="BirimID" type="xs:int" minOccurs="0" />
+              <xs:element name="AdiSoyadi" msprop:Generator_ColumnPropNameInRow="AdiSoyadi" msprop:Generator_ColumnPropNameInTable="AdiSoyadiColumn" msprop:Generator_ColumnVarNameInTable="columnAdiSoyadi" msprop:Generator_UserColumnName="AdiSoyadi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefon" msprop:Generator_ColumnPropNameInRow="Telefon" msprop:Generator_ColumnPropNameInTable="TelefonColumn" msprop:Generator_ColumnVarNameInTable="columnTelefon" msprop:Generator_UserColumnName="Telefon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adres" msprop:Generator_ColumnPropNameInRow="Adres" msprop:Generator_ColumnPropNameInTable="AdresColumn" msprop:Generator_ColumnVarNameInTable="columnAdres" msprop:Generator_UserColumnName="Adres" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_UserColumnName="Email" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Tarih" msprop:Generator_ColumnPropNameInRow="Tarih" msprop:Generator_ColumnPropNameInTable="TarihColumn" msprop:Generator_ColumnVarNameInTable="columnTarih" msprop:Generator_UserColumnName="Tarih" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_UserColumnName="IsActive" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BirimAdi" msprop:Generator_ColumnPropNameInRow="BirimAdi" msprop:Generator_ColumnPropNameInTable="BirimAdiColumn" msprop:Generator_ColumnVarNameInTable="columnBirimAdi" msprop:Generator_UserColumnName="BirimAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:viewPersonelBirim" />
+      <xs:field xpath="mstns:PersonelID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
