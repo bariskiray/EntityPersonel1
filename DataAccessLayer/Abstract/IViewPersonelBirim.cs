@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityPersonel1.DataAccessLayer
+namespace EntityPersonel1.DataAccessLayer.Abstract
 {
-    public class PersonelDAL:RepostioryBase<Personeller,Model1>
+    public interface IViewPersonelBirim : IRepository<viewPersonelBirim>
     {
+
     }
 }

@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityPersonel1.DataAccessLayer
+namespace EntityPersonel1.DataAccessLayer.Abstract
 {
-    public class viewPersonelBirimDAL : RepostioryBase<viewPersonelBirim, Model1>
+    public interface IBirimler : IRepository<Birimler>
     {
-        
+
     }
 }

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityPersonel1.DataAccessLayer
+namespace EntityPersonel1.DataAccessLayer.Abstract
 {
-    public class BirimDAL:RepostioryBase<Birimler,Model1>
+    public interface IPersoneller: IRepository<Personeller>
     {
 
     }
