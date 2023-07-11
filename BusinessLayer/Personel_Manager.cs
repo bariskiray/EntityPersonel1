@@ -9,35 +9,34 @@ using System.Threading.Tasks;
 
 namespace EntityPersonel1.BusinessLayer
 {
-    public class Birimler_Manager: IBirimlerService
+    public class Personel_Manager: IPersonellerService
     {
-        Repository<Birimler> _repository;
-        public Birimler_Manager()
+        Repository<Personeller> _repository;
+        public Personel_Manager()
         {
-            _repository = new Repository<Birimler>();
+            _repository = new Repository<Personeller>();
         }
-        public int BLAdd(Birimler p)
+        public int BLAdd(Personeller p)
         {
             return _repository.Insert(p);
 
         }
 
-        public int BLDelete(Birimler p)
+        public int BLDelete(Personeller p)
         {
             return _repository.Delete(p);
 
         }
 
-        public int BLUpdate(Birimler p)
+        public int BLUpdate(Personeller p)
         {
-            return (_repository.Update(p)); 
+            return (_repository.Update(p));
         }
 
 
-        public List<Birimler> GetAll()
+        public List<Personeller> GetAll()
         {
             return _repository.List();
         }
     }
 }
-    

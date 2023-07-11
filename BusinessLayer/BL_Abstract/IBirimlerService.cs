@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace EntityPersonel1.BusinessLayer.BL_Abstract
 {
-    public interface IBirimlerManager<T> {
-        List<T> GetAll();
-        int BLAdd(T p);
+    public interface IBirimlerService {
+        List<Birimler> GetAll();
+        int BLAdd(Birimler p);
 
-        int BLDelete(T p);
+        int BLDelete(Birimler p);
 
-        int BLUpdate(T p);
+        int BLUpdate(Birimler p);
     }
         
 }

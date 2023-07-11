@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace EntityPersonel1.BusinessLayer.BL_Abstract
 {
-    public interface IPersonellerManager<T>
+    public interface IViewPersonelBirimService
     {
-        List<T> GetAll();
-        int BLAdd(T p);
+        List<viewPersonelBirim> GetAll();
+        int BLAdd(viewPersonelBirim p);
 
-        int BLDelete(T p);
+        int BLDelete(viewPersonelBirim p);
 
-        int BLUpdate(T p);
+        int BLUpdate(viewPersonelBirim p);
+
     }
 }

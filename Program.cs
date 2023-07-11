@@ -13,9 +13,9 @@ namespace EntityPersonel1
     {
         static void Main(string[] args)
         {
-            Birimler_Manager<Birimler> bm = new Birimler_Manager<Birimler>();
-            Birimler_Manager<viewPersonelBirim> vpbm = new Birimler_Manager<viewPersonelBirim>();
-            Birimler_Manager<Personeller> pm = new Birimler_Manager<Personeller>();
+            Birimler_Manager bm = new Birimler_Manager();
+            Personel_Manager pm = new Personel_Manager();
+            viewPersonelBirim_Manager vpbm = new viewPersonelBirim_Manager();
             // PersonellerManager pm = new PersonellerManager();
             // ViewPersonelBirimManager vpm = new ViewPersonelBirimManager();
             // Birimler b = new Birimler();
