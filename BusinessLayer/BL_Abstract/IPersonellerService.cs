@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,5 +16,7 @@ namespace EntityPersonel1.BusinessLayer.BL_Abstract
         int BLDelete(Personeller p);
 
         int BLUpdate(Personeller p);
+
+        List<Personeller> GetByName(string name);
     }
 }

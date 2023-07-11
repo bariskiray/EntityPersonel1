@@ -56,11 +56,37 @@ foreach (var item in vpm.GetAll())
     Console.WriteLine("ID:  " + item.PersonelID + " - Birim ID: " + item.BirimID + " - Adı Soyadı " + item.AdiSoyadi + " - Telefon: " + item.Telefon
        + " - Adres: " + item.Adres + " - Tarih: " + item.Tarih + " - Aktif mi: " + item.IsActive);
 }
+            Console.WriteLine();
+            Console.WriteLine();
+
+        /* foreach (var item in vpbm.GetAll())
+            {
+                Console.WriteLine("ID:  " + item.PersonelID + " - Birim ID: " + item.BirimID + " - Adı Soyadı " + item.AdiSoyadi + " - Telefon: " + item.Telefon
+       + " - Adres: " + item.Adres + " - Tarih: " + item.Tarih + " - Aktif mi: " + item.IsActive + " - Birim Adı: " + item.BirimAdi);
+            } */
+            //string personelname = "barış kıray";
+           /* foreach (var item in pm.GetByName(personelname))
+            {
+                Console.WriteLine("ID:  " + item.PersonelID + " - Birim ID: " + item.BirimID + " - Adı Soyadı " + item.AdiSoyadi + " - Telefon: " + item.Telefon
+                   + " - Adres: " + item.Adres + " - Tarih: " + item.Tarih + " - Aktif mi: " + item.IsActive); */
+           foreach (var item in pm.GetByName("barış kıray")) {
+                Console.WriteLine("ID:  " + item.PersonelID + " - Birim ID: " + item.BirimID + " - Adı Soyadı " + item.AdiSoyadi + " - Telefon: " + item.Telefon
+                       + " - Adres: " + item.Adres + " - Tarih: " + item.Tarih + " - Aktif mi: " + item.IsActive);
+            }
+           Console.WriteLine();
+            Console.WriteLine();
+
+           foreach (var item in pm.GetByName("asya arifoğlu"))
+            {
+                Console.WriteLine("ID:  " + item.PersonelID + " - Birim ID: " + item.BirimID + " - Adı Soyadı " + item.AdiSoyadi + " - Telefon: " + item.Telefon
+                       + " - Adres: " + item.Adres + " - Tarih: " + item.Tarih + " - Aktif mi: " + item.IsActive);
+            }
 
 
 
 
-}
+
+            }
 
 }
 }

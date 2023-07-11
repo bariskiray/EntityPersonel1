@@ -38,5 +38,10 @@ namespace EntityPersonel1.BusinessLayer
         {
             return _repository.List();
         }
+
+        public List<Personeller> GetByName(string name)
+        {
+            return _repository.List(x=>x.AdiSoyadi == name);
+        }
     }
 }

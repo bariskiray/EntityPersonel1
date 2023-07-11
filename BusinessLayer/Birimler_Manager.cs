@@ -21,7 +21,6 @@ namespace EntityPersonel1.BusinessLayer
             return _repository.Insert(p);
 
         }
-
         public int BLDelete(Birimler p)
         {
             return _repository.Delete(p);
