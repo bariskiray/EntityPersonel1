@@ -9,12 +9,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>EntityPersonel1</RootNamespace>
     <AssemblyName>EntityPersonel1</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +35,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EntityPersonel1.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -58,13 +62,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLayer\BirimlerManager.cs" />
-    <Compile Include="BusinessLayer\PersonellerManager.cs" />
-    <Compile Include="BusinessLayer\ViewPersonelBirimManager.cs" />
-    <Compile Include="DataAccessLayer\Abstract\IBirimler.cs" />
-    <Compile Include="DataAccessLayer\Abstract\IPersoneller.cs" />
-    <Compile Include="DataAccessLayer\Abstract\IRepository.cs" />
-    <Compile Include="DataAccessLayer\Abstract\IViewPersonelBirim.cs" />
+    <Compile Include="BusinessLayer\BL_Abstract\IBirimlerManager.cs" />
+    <Compile Include="BusinessLayer\BL_Abstract\IViewPersonelBirimManager.cs" />
+    <Compile Include="BusinessLayer\BL_Abstract\IPersonellerManager.cs" />
+    <Compile Include="BusinessLayer\Birimler_Manager.cs" />
+    <Compile Include="DataAccessLayer\DA_Abstract\IBirimler.cs" />
+    <Compile Include="DataAccessLayer\DA_Abstract\IPersoneller.cs" />
+    <Compile Include="DataAccessLayer\DA_Abstract\IRepository.cs" />
+    <Compile Include="DataAccessLayer\DA_Abstract\IViewPersonelBirim.cs" />
     <Compile Include="DataAccessLayer\Repository.cs" />
     <Compile Include="Entities\Birimler.cs" />
     <Compile Include="Entities\Model1.cs" />
@@ -85,6 +90,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="EntityPersonelDataSet.xsc">
       <DependentUpon>EntityPersonelDataSet.xsd</DependentUpon>
