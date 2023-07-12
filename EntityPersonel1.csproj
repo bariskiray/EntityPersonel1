@@ -62,27 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLayer\BL_Abstract\IBirimlerService.cs" />
-    <Compile Include="BusinessLayer\BL_Abstract\IViewPersonelBirimService.cs" />
-    <Compile Include="BusinessLayer\BL_Abstract\IPersonellerService.cs" />
-    <Compile Include="BusinessLayer\Birimler_Manager.cs" />
-    <Compile Include="BusinessLayer\Personel_Manager.cs" />
-    <Compile Include="BusinessLayer\viewPersonelBirim_Manager.cs" />
-    <Compile Include="DataAccessLayer\DA_Abstract\IBirimler.cs" />
-    <Compile Include="DataAccessLayer\DA_Abstract\IPersoneller.cs" />
-    <Compile Include="DataAccessLayer\DA_Abstract\IRepository.cs" />
-    <Compile Include="DataAccessLayer\DA_Abstract\IViewPersonelBirim.cs" />
-    <Compile Include="DataAccessLayer\Repository.cs" />
-    <Compile Include="Entities\Birimler.cs" />
-    <Compile Include="Entities\Model1.cs" />
-    <Compile Include="Entities\Personeller.cs" />
-    <Compile Include="Entities\viewPersonelBirim.cs" />
     <Compile Include="EntityPersonelDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EntityPersonelDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,6 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities_\Entities_.csproj">
+      <Project>{eb6745e9-b97a-406b-81b9-b88ab2290b3d}</Project>
+      <Name>Entities_</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
