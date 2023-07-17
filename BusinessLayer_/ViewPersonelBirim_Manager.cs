@@ -12,28 +12,32 @@ namespace BusinessLayer_
 {
    public class ViewPersonelBirim_Manager: IViewPersonelBirimService_
     {
-        ViewPersonelBirimRepo _repository;
+        public readonly IViewPersonelBirim _viewPersonelBirim;
+        public ViewPersonelBirim_Manager(IViewPersonelBirim viewPersonelBirim)
+        {
+            _viewPersonelBirim = viewPersonelBirim;
+        }
         public int BLAdd(viewPersonelBirim p)
         {
-            return _repository.Insert(p);
+            return _viewPersonelBirim.Insert(p);
 
         }
 
         public int BLDelete(viewPersonelBirim p)
         {
-            return _repository.Delete(p);
+            return _viewPersonelBirim.Delete(p);
 
         }
 
         public int BLUpdate(viewPersonelBirim p)
         {
-            return (_repository.Update(p));
+            return (_viewPersonelBirim.Update(p));
         }
 
 
         public List<viewPersonelBirim> GetAll()
         {
-           return _repository.List();
+           return _viewPersonelBirim.List();
         }
     }
 }
